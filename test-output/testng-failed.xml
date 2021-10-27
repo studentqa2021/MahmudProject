@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testNG.test.TestNGtest">
+      <class name="com.apiTest.ApiTest">
         <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
+          <include name="authenticationBasic"/>
         </methods>
-      </class> <!-- com.testNG.test.TestNGtest -->
+      </class> <!-- com.apiTest.ApiTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
