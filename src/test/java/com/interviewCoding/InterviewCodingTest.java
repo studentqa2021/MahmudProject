@@ -1,6 +1,8 @@
 package com.interviewCoding;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -59,12 +61,31 @@ public class InterviewCodingTest {
 		return (generatedString);
 
 	}
+	  
+		public static int getSecondLargest(Integer[] a, int size){  
+		List<Integer> list=Arrays.asList(a);  
+		Collections.sort(list);  
+		int element=list.get(size-2);  
+		return element;  
+		}  
+		public static int findSecondValue(int[]x, int size) {
+			Arrays.sort(x);
+			System.out.println(x.length);
+			return x[size-3];
+			
+		}
+		
 
 	public static void main(String[] args) {
-		InterviewCodingTest obj = new InterviewCodingTest();
-		 obj.removeDuplicate();
+		//InterviewCodingTest obj = new InterviewCodingTest();
+		 //obj.removeDuplicate();
 		// obj.countDuplicate();
 		// obj.setTest();
 		//randomString();
+		Integer[] a = {1,2,3,4,5,6};
+		System.out.println(getSecondLargest(a,6));
+		int x[]= {1,2,3,4,5,6};
+		System.out.println(findSecondValue(x,6));
+		
 	}
 }
